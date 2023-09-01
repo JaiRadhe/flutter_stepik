@@ -18,29 +18,34 @@ class AuthScreen extends StatelessWidget {
             CupertinoTextField(
               placeholder: 'Логин или почта',
               placeholderStyle: TextStyle(
-                color: Color(0xFF808080),
+                color: Color(0x99808080),
               ),
               decoration: BoxDecoration(
                 color: CupertinoColors.white,
               ),
+              padding: const EdgeInsets.symmetric(vertical: 19, horizontal: 16),
             ),
             CupertinoTextField(
               placeholder: 'Пароль',
               placeholderStyle: TextStyle(
-                color: Color(0xFF808080),
+                color: Color(0x99808080),
               ),
-                decoration: BoxDecoration(
+              decoration: BoxDecoration(
                 color: CupertinoColors.white,
-            ),
+              ),
+              padding: const EdgeInsets.symmetric(vertical: 19, horizontal: 16),
             ),
             SizedBox(height: 32),
             Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: CupertinoButton.filled(
+                child: CupertinoButton(
+                  color: Color(0xFF4631D2),
                   padding: const EdgeInsets.symmetric(vertical: 20),
                   child: Text(
                     'Войти',
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: CupertinoColors.white),
                   ),
                   onPressed: () {},
                 )),
@@ -50,12 +55,16 @@ class AuthScreen extends StatelessWidget {
                 child: CupertinoButton(
                   color: Color(0xFF4631D2),
                   padding: const EdgeInsets.symmetric(vertical: 20),
-                  child: Text('Зарегистрироваться'),
+                  child: Text('Зарегистрироваться',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: CupertinoColors.white)),
                   onPressed: () {
                     Navigator.push(
                       context,
                       CupertinoPageRoute(builder: (context) => RegScreen()),
-                    );},
+                    );
+                  },
                 ))
           ]),
     );
