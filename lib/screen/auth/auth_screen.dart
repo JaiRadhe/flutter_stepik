@@ -8,7 +8,6 @@ class AuthScreen extends StatelessWidget {
       backgroundColor: Color(0xFFF3F4F6),
       navigationBar: CupertinoNavigationBar(
         border: Border(),
-        padding: EdgeInsetsDirectional.fromSTEB(0, 11, 0, 13),
         backgroundColor: CupertinoColors.white,
         middle: Text(
           'Авторизация',
@@ -22,7 +21,7 @@ class AuthScreen extends StatelessWidget {
             CupertinoTextField(
               placeholder: 'Логин или почта',
               placeholderStyle: TextStyle(
-                color: Color(0x99808080),
+                color: Color(0xFFC3C3C3),
               ),
               decoration: BoxDecoration(
                 color: CupertinoColors.white,
@@ -32,7 +31,7 @@ class AuthScreen extends StatelessWidget {
             CupertinoTextField(
               placeholder: 'Пароль',
               placeholderStyle: TextStyle(
-                color: Color(0x99808080),
+                color: Color(0xFFC3C3C3),
               ),
               decoration: BoxDecoration(
                 color: CupertinoColors.white,

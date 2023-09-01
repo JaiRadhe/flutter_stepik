@@ -37,8 +37,11 @@ class RegScreenState extends State<RegScreen> {
       backgroundColor: Color(0xFFF3F4F6),
       navigationBar: const CupertinoNavigationBar(
         border: Border(),
-        backgroundColor: CupertinoColors.secondarySystemGroupedBackground,
-        middle: Text('Регистрация'),
+        backgroundColor: CupertinoColors.white,
+        middle: Text(
+          'Регистрация',
+          style: TextStyle(color: CupertinoColors.black),
+        ),
       ),
       child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -48,7 +51,7 @@ class RegScreenState extends State<RegScreen> {
             const CupertinoTextField(
               placeholder: "Логин",
               placeholderStyle: TextStyle(
-                color: Color(0x99808080),
+                color: Color(0xFFC3C3C3),
               ),
               style: TextStyle(color: CupertinoColors.black),
               decoration: BoxDecoration(
@@ -59,7 +62,7 @@ class RegScreenState extends State<RegScreen> {
             const CupertinoTextField(
               placeholder: "Телефон",
               placeholderStyle: TextStyle(
-                color: Color(0x99808080),
+                color: Color(0xFFC3C3C3),
               ),
               style: TextStyle(color: CupertinoColors.black),
               decoration: BoxDecoration(
@@ -70,7 +73,7 @@ class RegScreenState extends State<RegScreen> {
             const CupertinoTextField(
               placeholder: "Почта",
               placeholderStyle: TextStyle(
-                color: Color(0x99808080),
+                color: Color(0xFFC3C3C3),
               ),
               style: TextStyle(color: CupertinoColors.black),
               decoration: BoxDecoration(
@@ -83,7 +86,7 @@ class RegScreenState extends State<RegScreen> {
               obscureText: hidePass,
               placeholder: "Пароль",
               placeholderStyle: TextStyle(
-                color: Color(0x99808080),
+                color: Color(0xFFC3C3C3),
               ),
               style: TextStyle(color: CupertinoColors.black),
               decoration: BoxDecoration(
