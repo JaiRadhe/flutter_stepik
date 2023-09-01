@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:study/screen/registration/reg_screen.dart';
 
 class AuthScreen extends StatelessWidget {
   @override
@@ -16,12 +17,21 @@ class AuthScreen extends StatelessWidget {
           children: [
             CupertinoTextField(
               placeholder: 'Логин или почта',
+              placeholderStyle: TextStyle(
+                color: Color(0xFF808080),
+              ),
               decoration: BoxDecoration(
                 color: CupertinoColors.white,
               ),
             ),
             CupertinoTextField(
               placeholder: 'Пароль',
+              placeholderStyle: TextStyle(
+                color: Color(0xFF808080),
+              ),
+                decoration: BoxDecoration(
+                color: CupertinoColors.white,
+            ),
             ),
             SizedBox(height: 32),
             Padding(
@@ -41,7 +51,11 @@ class AuthScreen extends StatelessWidget {
                   color: Color(0xFF4631D2),
                   padding: const EdgeInsets.symmetric(vertical: 20),
                   child: Text('Зарегистрироваться'),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      CupertinoPageRoute(builder: (context) => RegScreen()),
+                    );},
                 ))
           ]),
     );
