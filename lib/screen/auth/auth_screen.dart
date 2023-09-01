@@ -8,8 +8,12 @@ class AuthScreen extends StatelessWidget {
       backgroundColor: Color(0xFFF3F4F6),
       navigationBar: CupertinoNavigationBar(
         border: Border(),
-        backgroundColor: CupertinoColors.secondarySystemGroupedBackground,
-        middle: Text('Авторизация'),
+        padding: EdgeInsetsDirectional.fromSTEB(0, 11, 0, 13),
+        backgroundColor: CupertinoColors.white,
+        middle: Text(
+          'Авторизация',
+          style: TextStyle(color: CupertinoColors.black),
+        ),
       ),
       child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
