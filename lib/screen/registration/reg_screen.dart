@@ -8,28 +8,28 @@ class RegScreen extends StatefulWidget {
 
 class RegScreenState extends State<RegScreen> {
   bool hidePass = true;
-  final OverlayEntry overlayEntry = OverlayEntry(builder: (context) {
-    return Positioned(
-      top: MediaQuery.of(context).size.height * 0.8,
-      width: MediaQuery.of(context).size.width,
-      child: Material(
-        child: Container(
-          color: Colors.black54,
-          child: Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Text(
-              'Вы успешно зарегистрированы',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 16.0,
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  });
+  // final OverlayEntry overlayEntry = OverlayEntry(builder: (context) {
+  //   return Positioned(
+  //     top: MediaQuery.of(context).size.height * 0.8,
+  //     width: MediaQuery.of(context).size.width,
+  //     child: Material(
+  //       child: Container(
+  //         color: Colors.black54,
+  //         child: Padding(
+  //           padding: EdgeInsets.all(8.0),
+  //           child: Text(
+  //             'Вы успешно зарегистрированы',
+  //             textAlign: TextAlign.center,
+  //             style: TextStyle(
+  //               color: Colors.white,
+  //               fontSize: 16.0,
+  //             ),
+  //           ),
+  //         ),
+  //       ),
+  //     ),
+  //   );
+  // });
 
   @override
   Widget build(BuildContext context) {
@@ -124,10 +124,10 @@ class RegScreenState extends State<RegScreen> {
                     vertical: 19,
                   ),
                   onPressed: () {
-                    Overlay.of(context)?.insert(overlayEntry);
-                    Future.delayed(Duration(seconds: 2), () {
-                      overlayEntry.remove();
-                    });
+                    // Overlay.of(context)?.insert(overlayEntry);
+                    // Future.delayed(Duration(seconds: 2), () {
+                    //   overlayEntry.remove();
+                    // });
                     Navigator.pop(context);
                   },
                 )),
